@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <!-- https://ekoopmans.github.io/html2pdf.js/ -->
+    <title>Book Reviewer</title>
+  </head>
+  <body>
+    
+
+    <form>
+      <section>
+        <h1>General</h1>
+        <div class="input">
+            <label for="title">Title:</label><br />
+            <input type="text" id="title" name="title" /><br />
+        </div>
+      
+<div class="input">
+    <label for="author">Author:</label><br />
+    <input type="text" id="author" name="author" />
+</div>
+      
+<div class="input">
+    <label for="genre">Genre:</label><br />
+    <input type="text" id="genre" name="genre" />
+</div>
+<div class="input">
+    <label for="link">Link:</label><br />
+    <input type="text" id="link" name="link" />
+</div>
+<div class="input">
+    <label for="Rating">Rating:</label><br />
+    <input type="radio" id="one" name="fav_language" value="one">
+    <label for="one">One</label><br>
+
+    <input type="radio" id="two" name="fav_language" value="two">
+    <label for="two">Two</label><br>
+
+    <input type="radio" id="three" name="fav_language" value="three">
+    <label for="three">Three</label><br>
+
+    <input type="radio" id="four" name="fav_language" value="four">
+    <label for="four">Four</label><br>
+
+    <input type="radio" id="five" name="fav_language" value="five">
+    <label for="five">Five</label>
+</div>
+<div class="input">
+    <label for="dtwnRead">Date when Read</label><br />
+    <input type="date" id="dtwnRead">
+</div>
+
+
+      </section>
+
+  
+    <section>
+        <div class="input">
+            <label for="threeSentences">The book in 3 Sentences:</label><br />
+           
+            <input type="text" id="s1" value="Sentence 1"><br>
+            <input type="text" id="s2" value="Sentence 2"><br>
+            <input type="text" id="s3" value="Sentence 3"><br>
+        </div> 
+        <div class="input">
+            <label for="impressions">Impressions</label><br />
+           
+            <input type="text" id="impressions" value="I like this book, because ..."><br>
+            
+        </div> 
+        <div class="input">
+            <label for="HowIdisc">How I discovered it:</label><br />
+           
+            <input type="text" id="howIdisc" value="I discovered this book..."><br>
+            
+        </div> 
+        <div class="input">
+            <label for="howshouldre">Who should read it?</label><br />
+           
+            <input type="text" id="howshouldre" value="I think persons who likes ... "><br>
+            
+        </div> 
+    </section>
+      
+    <section>
+        <div class="input">
+            <label for="Howchanged">How the book changed me:</label><br />
+           
+            <input type="text" id="howchanged" ><br>
+            
+        </div> 
+    </section>
+    
+      <section>
+        <div class="input">
+            <label for="topQuotes">Top 3 Qutes</label><br />
+           
+            <input type="text" id="q1" ><br>
+            <input type="text" id="q2"><br>
+            <input type="text" id="q3"><br>
+        </div>
+        <div class="input">
+            <label for="notes">Notes:</label><br />
+           
+            <input type="text" id="note" ><br>
+            
+        </div>
+      </section>
+    </form>
+    <button onclick="showInfo()">Generate</button>
+
+    <button onclick="createPdf()">Download</button>
+    <div id="toConvert">
+        <section>
+            <h1 id="titlePdf"></h1>
+            <h2 id="authorPdf"></h2>
+            <h3 id="genrePdf"></h3>
+            <p id="linkPdf"></p>
+            <h2>Rate</h2>
+            <p id="ratingPdf"></p>
+            <p id="dtwnReadPdf"></p>
+        </section>
+   <section>
+       <h2>The book in 3 Sentences</h2>
+       <p id="s1Pdf"></p>
+       <p id="s2Pdf"></p>
+       <p id="s3Pdf"></p>
+       <h2>Impressions</h2>
+       <p id="impressionPdf"></p>
+       <h2>How I discovered</h2>
+       <p id="howIdiscPdf"></p>
+       <h2>Who should read?</h2>
+       <p id="howshouldrePdf"></p>
+   </section>
+   <section>
+<h2>How the book changed me</h2>
+<p id="howchangedPdf"></p>
+   </section>
+   <section>
+    <h2>My top 3 Quotes</h2>
+    <p id="q1Pdf"></p>
+    <p id="q2Pdf"></p>
+    <p id="q3Pdf"></p>
+    <h2>Notes</h2>
+       <p id="notePdf"></p>
+   </section>
+     
+    </div>
+  </body>
+</html>

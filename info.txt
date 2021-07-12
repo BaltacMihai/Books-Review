@@ -1,0 +1,9 @@
+Functionality:
+- form :    General: Title, Author, Gennre, Link, Rating,Date When Read; 
+            Description: The Book in 3 Senteces, Impressions, How I discovered It, Who should read it,?
+            How the book changed me: ;
+            My top 3 Quotes: Quotes, Note;
+
+
+
+
