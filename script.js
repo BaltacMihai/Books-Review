@@ -3,7 +3,14 @@ function createPdf() {
 
   html2pdf().from(main).save();
 }
-
+let rating = 'one';
+ function ratingClicked(number){
+  document.getElementById(rating).classList.remove("bold");
+   document.getElementById(number).classList.add("bold");
+   
+   rating = number;
+   console.log(number)
+ }
 function showInfo() {
   const title = document.getElementById("title").value;
   document.getElementById("titlePdf").textContent = title;
@@ -17,21 +24,6 @@ function showInfo() {
   const link = document.getElementById("link").value;
   document.getElementById("linkPdf").textContent = link;
 
- let rating ;
-  if (document.getElementById("one").checked)
-   rating = document.getElementById("one").value;
-
-  else if (document.getElementById("two").checked)
-  rating = document.getElementById("two").value;
-
-  else if (document.getElementById("three").checked)
-  rating = document.getElementById("three").value;
-
-  else if (document.getElementById("four").checked)
-  rating = document.getElementById("four").value;
-
-  else if (document.getElementById("five").checked)
-  rating = document.getElementById("five").value;
 
   document.getElementById("ratingPdf").textContent = rating;
 
@@ -70,7 +62,7 @@ document.getElementById("q2Pdf").textContent = q2;
 const q3 = document.getElementById("q3").value;
 document.getElementById("q3Pdf").textContent = q3;
 
-const note = document.getElementById("q1").value;
+const note = document.getElementById("note").value;
 document.getElementById("notePdf").textContent = note;
 
 
