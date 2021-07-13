@@ -6,8 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
     <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <!-- https://ekoopmans.github.io/html2pdf.js/ -->
+    
     <title>Book Reviewer</title>
   </head>
   <body>
@@ -24,22 +28,19 @@
           <h1>General</h1>
           <div class="input">
             <label for="title">Title:</label>
-            <input type="text" id="title" name="title" />
+            <input type="text" id="title" name="title" value="Some Title"/>
           </div>
 
           <div class="input">
             <label for="author">Author:</label>
-            <input type="text" id="author" name="author" />
+            <input type="text" id="author" name="author" value ="Some Author"/>
           </div>
 
           <div class="input">
             <label for="genre">Genre:</label>
-            <input type="text" id="genre" name="genre" />
+            <input type="text" id="genre" name="genre" value = "Some Genre" />
           </div>
-          <div class="input">
-            <label for="link">Link:</label>
-            <input type="text" id="link" name="link" />
-          </div>
+          
           <div class="input">
             <label for="Rating">Rating:</label>
 <div class="rating">
@@ -62,9 +63,9 @@
           <div class="input">
             <label for="threeSentences">The book in 3 Sentences:</label>
 
-            <input type="text" id="s1" value="Sentence 1" /><br />
-            <input type="text" id="s2" value="Sentence 2" /><br />
-            <input type="text" id="s3" value="Sentence 3" /><br />
+            <input type="text" id="s1" value="Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae delectus cupiditate doloribus saepe natus quod tempora sapiente, placeat iste nulla voluptatem amet! Nisi necessitatibus harum natus aperiam perferendis incidunt cumque." /><br />
+            <input type="text" id="s2" value="Lorem ipsum dolor sit amet consectetur adipisicing elit. A qui nobis doloremque debitis adipisci dolore voluptatem voluptate maiores eveniet totam ipsam in velit iste aperiam, temporibus omnis rerum delectus ab." /><br />
+            <input type="text" id="s3" value="Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis tempore ducimus nemo! Nostrum ipsa aliquam qui nobis at voluptatibus aperiam placeat, nam repellat? Voluptas magni nisi, omnis nobis dicta temporibus." /><br />
           </div>
           <div class="input">
             <label for="impressions">Impressions</label>
@@ -72,7 +73,7 @@
             <input
               type="text"
               id="impressions"
-              value="I like this book, because ..."
+              value="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas aliquid, quis error reiciendis mollitia possimus vel eaque cum ullam asperiores blanditiis sapiente, cupiditate ipsam facere ex tempora. Ullam, dolorum molestias? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente consequatur, nam incidunt harum distinctio asperiores aut inventore molestiae quas laboriosam ipsa aliquam est facilis esse minima temporibus doloremque ab voluptatem!"
             /><br />
           </div>
           <div class="input">
@@ -81,7 +82,7 @@
             <input
               type="text"
               id="howIdisc"
-              value="I discovered this book..."
+              value="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam pariatur, ea, sed repellendus amet consequatur optio ducimus est commodi voluptate dicta at obcaecati necessitatibus architecto libero inventore, atque velit culpa. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi minus eius quia dolor maiores aspernatur recusandae quas adipisci dolore, vel est in, quo non consectetur soluta, at minima molestiae quisquam!"
             /><br />
           </div>
           <div class="input">
@@ -90,7 +91,7 @@
             <input
               type="text"
               id="howshouldre"
-              value="I think persons who likes ... "
+              value="Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque perferendis quibusdam repellat adipisci, animi voluptas pariatur, consequatur cumque, eaque ullam eveniet vel illum. Ea eligendi repudiandae distinctio qui voluptas accusantium! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab neque magnam repellat eligendi. Molestias iusto nostrum tenetur minima minus nam vel iure! Delectus quae provident eum tenetur soluta commodi repudiandae. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error optio placeat, rerum dolor velit officia nostrum eaque quos assumenda. Cumque numquam expedita aperiam veniam. Libero repellat aliquid ullam! Id, optio."
             /><br />
           </div>
         </section>
@@ -98,9 +99,9 @@
         <section>
             <h1>How the book changed me</h1>
           <div class="input">
-            <label for="Howchanged">How the book changed me:</label>
+            <label for="Howchanged" >How the book changed me:</label>
 
-            <input type="text" id="howchanged" /><br />
+            <input type="text" id="howchanged" value= "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quaerat tenetur quo, perferendis nemo minus esse quisquam dolores voluptatum itaque eveniet voluptatem, distinctio voluptates. At sint itaque ipsa ipsam corrupti? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas molestias dolor reprehenderit omnis, voluptatum dignissimos assumenda doloribus natus unde cupiditate cum praesentium placeat inventore ducimus repudiandae minima autem quod tempore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate esse amet distinctio eius corrupti blanditiis iusto impedit neque rem alias molestias ad quam, quidem consectetur ullam vero, assumenda exercitationem sint. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique quo in sint molestiae! Culpa ut tenetur odit quidem delectus? Aliquam impedit recusandae ab qui error distinctio amet facere assumenda cupiditate?"/><br />
           </div>
         </section>
 
@@ -110,14 +111,14 @@
           <div class="input">
             <label for="topQuotes">Top 3 Qutes</label>
 
-            <input type="text" id="q1" /><br />
-            <input type="text" id="q2" /><br />
-            <input type="text" id="q3" /><br />
+            <input type="text" id="q1" value="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil officiis molestias beatae inventore expedita! Nesciunt quam soluta necessitatibus cum aliquam iusto eos cumque adipisci, delectus pariatur. Eius, sapiente labore! Nostrum?" /><br />
+            <input type="text" id="q2" value="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem, soluta eveniet natus neque quas nobis, consequatur quibusdam perspiciatis ipsa hic sequi dolores! Quis, sapiente harum aliquid in voluptatibus rem voluptatum."/><br />
+            <input type="text" id="q3" value="Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, veniam architecto! Voluptatem hic, quia eveniet magni nemo corrupti aperiam quam nisi quaerat eaque numquam commodi a quo ducimus esse nam."/><br />
           </div>
           <div class="input">
             <label for="notes">Notes:</label>
 
-            <input type="text" id="note" /><br />
+            <input type="text" id="note" value="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci ducimus, iusto sapiente aperiam illo, eaque quae tenetur doloribus at harum nihil esse ipsum ratione nemo dicta repellendus dolores quibusdam obcaecati."/><br />
           </div>
         </section>
       </form>
@@ -131,36 +132,71 @@
 
     <div id="toConvert">
       <section>
-        <h1 id="titlePdf"></h1>
-        <h2 id="authorPdf"></h2>
-        <h3 id="genrePdf"></h3>
-        <p id="linkPdf"></p>
-        <h2>Rate</h2>
-        <p id="ratingPdf"></p>
         <p id="dtwnReadPdf"></p>
+          <div class="flex center" id="titleDiv">
+            <img src="Icons/book.png" alt="" class="icon-50">
+            <h1 id="titlePdf"></h1>
+          </div>
+       
+        <h3 id="authorPdf"></h3>
+    
+        <div class="flex margin-top" id="ratingDiv"></div>
+       
+        <p id="genrePdf"></p>
+
       </section>
-      <section>
-        <h2>The book in 3 Sentences</h2>
+      <section id="desc">
+        <div class="flex">
+          <img src="Icons/paragraph.png" alt="" class="icon-25 margin-right">
+          <h2>The book in 3 Sentences</h2>
+     
+        </div>
+        
         <p id="s1Pdf"></p>
         <p id="s2Pdf"></p>
         <p id="s3Pdf"></p>
-        <h2>Impressions</h2>
+
+        <div class="flex">
+          <img src="Icons/impressions.png" alt="" class="icon-25 margin-right">
+          <h2>Impressions</h2>
+        </div>
         <p id="impressionPdf"></p>
-        <h2>How I discovered</h2>
+
+        <div class="flex">
+          <img src="Icons/discover.png" alt="" class="icon-25 margin-right">
+          <h2>How I discovered</h2>
+        </div>
         <p id="howIdiscPdf"></p>
-        <h2>Who should read?</h2>
+
+        <div class="flex">
+          <img src="Icons/reader.png" alt="" class="icon-25 margin-right">
+          <h2>Who should read?</h2>
+        </div>
         <p id="howshouldrePdf"></p>
       </section>
       <section>
-        <h2>How the book changed me</h2>
+
+        <div class="flex">
+          <img src="Icons/change.png" alt="" class="icon-25 margin-right">
+          <h2>How the book changed me</h2>
+        </div>
         <p id="howchangedPdf"></p>
       </section>
       <section>
-        <h2>My top 3 Quotes</h2>
+        <div class="flex">
+          <img src="Icons/quotes.png" alt="" class="icon-25 margin-right">
+          <h2>My top 3 Quotes</h2>
+        </div>
+ 
         <p id="q1Pdf"></p>
         <p id="q2Pdf"></p>
         <p id="q3Pdf"></p>
-        <h2>Notes</h2>
+        <div class="flex">
+          <img src="Icons/notes.png" alt="" class="icon-25 margin-right">
+          <h2>Notes</h2>
+        </div>
+
+      
         <p id="notePdf"></p>
       </section>
     </div>

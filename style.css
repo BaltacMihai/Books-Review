@@ -3,10 +3,6 @@
     margin: 0%;
 }
 
-h1{
-    color: aqua;
-
-}
 
 
 body{
@@ -15,7 +11,7 @@ body{
 
 .line1{
 background-color: #802392;
-z-index: -999;
+z-index: -998;
 width: 100%;
 height: 100%;
 position: fixed;
@@ -25,7 +21,7 @@ left: 0;
 }
 .line2{
     background-color: #b359c5;
-    z-index: -999;
+    z-index: -998;
     width: 120%;
     height: 120%;
     transform: rotate(45deg);
@@ -101,13 +97,71 @@ input {
   #toConvert {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
+  font-family: 'Comfortaa', cursive;
+  z-index: -999;
 }
 #toConvert section{
-    display: relative;
+    display: block;
+    margin-bottom: 10px;
+    border: 0;
+    left: 0;
+    position: static;
+   
   }
+  #desc{
+    page-break-after: always;
 
+  }
+  
+  #toConvert p{
+   margin: 15px;
+  }
   #toConvert h2{
     right:5%;
   }
+
+.flex{
+display: flex;
+align-items: center;
+
+}
+
+.center{
+    justify-content: center;
+}
+#dtwnReadPdf{
+    position: absolute;
+    right: 10px;
+}
+
+#authorPdf{
+    position: absolute;
+    right: 10px;
+}
+#genrePdf{
+    position: absolute;
+    left: 10px;
+}
+
+
+.icon-100{
+    width: 100px;
+}
+
+.icon-25{
+    width: 25px;
+}
+
+.icon-50{
+    width: 50px;
+}
+
+.margin-right{
+    margin-right: 5px;
+}
+
+.margin-top{
+    margin-top: 15px;
+}

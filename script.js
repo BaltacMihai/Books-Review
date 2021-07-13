@@ -1,9 +1,7 @@
-function createPdf() {
-  const main = document.getElementById("toConvert");
 
-  html2pdf().from(main).save();
-}
+
 let rating = 'one';
+
  function ratingClicked(number){
   document.getElementById(rating).classList.remove("bold");
    document.getElementById(number).classList.add("bold");
@@ -11,8 +9,15 @@ let rating = 'one';
    rating = number;
    console.log(number)
  }
+
+
+
+var repeat = -1;
+var count = -1;
+var title;
 function showInfo() {
-  const title = document.getElementById("title").value;
+  repeat ++;
+  title = document.getElementById("title").value;
   document.getElementById("titlePdf").textContent = title;
 
   const author = document.getElementById("author").value;
@@ -21,11 +26,47 @@ function showInfo() {
   const genre = document.getElementById("genre").value;
   document.getElementById("genrePdf").textContent = genre;
 
-  const link = document.getElementById("link").value;
-  document.getElementById("linkPdf").textContent = link;
+ 
 
 
-  document.getElementById("ratingPdf").textContent = rating;
+ 
+
+
+
+if(repeat != 0 ) {
+  const div = document.getElementById('ratingDiv');
+  div.innerHTML = "";
+  
+}
+
+  switch(rating)
+  {
+    case 'one': count = 1;
+    break;
+    case 'two': count = 2;
+    break;
+    case 'three': count = 3;
+    break;
+    case 'four': count = 4;
+    break;
+    case 'five': count = 5;
+    break;
+  }
+  const div = document.getElementById('ratingDiv');
+ for(let i = 0; i<count; i++)
+{
+  let img = document.createElement("img");
+  img.src = "Icons/star.png";
+  img.classList.add('icon-25');
+  document.getElementById("ratingDiv").appendChild(img);
+}
+for(let i= count; i<5;i++)
+{
+  let img = document.createElement("img");
+  img.src = "Icons/star-empty.png";
+  img.classList.add('icon-25');
+  document.getElementById("ratingDiv").appendChild(img);
+}
 
   const date = document.getElementById("dtwnRead").value;
   document.getElementById("dtwnReadPdf").textContent = date;
@@ -66,4 +107,11 @@ const note = document.getElementById("note").value;
 document.getElementById("notePdf").textContent = note;
 
 
+}
+function createPdf() {
+  const main = document.getElementById("toConvert");
+  var opt = {
+    filename:     count+' '+title+'.pdf'
+  };
+  html2pdf().set(opt).from(main).save();
 }
