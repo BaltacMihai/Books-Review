@@ -7,7 +7,8 @@ let rating = 'one';
    document.getElementById(number).classList.add("bold");
    
    rating = number;
-   console.log(number)
+   console.log(number);
+   showInfo();
  }
 
 
@@ -109,9 +110,11 @@ document.getElementById("notePdf").textContent = note;
 
 }
 function createPdf() {
+
   const main = document.getElementById("toConvert");
   var opt = {
     filename:     count+' '+title+'.pdf'
   };
   html2pdf().set(opt).from(main).save();
+
 }

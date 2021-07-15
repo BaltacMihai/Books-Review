@@ -14,13 +14,13 @@
     
     <title>Book Reviewer</title>
   </head>
-  <body>
+  <body onload="showInfo()">
       <div class="background">
         <div class="line1"></div>
         <div class="line2"></div>
+        
       </div>
 
-   
 
     <div class="principal">
       <form>
@@ -63,7 +63,7 @@
           <div class="input">
             <label for="threeSentences">The book in 3 Sentences:</label>
 
-            <input   oninput="showInfo()"  type="text" id="s1" value="Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae delectus cupiditate doloribus saepe natus quod tempora sapiente, placeat iste nulla voluptatem amet! Nisi necessitatibus harum natus aperiam perferendis incidunt cumque." /><br />
+            <input   oninput="showInfo()" class="big-text" type="text" id="s1" value="Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae delectus cupiditate doloribus saepe natus quod tempora sapiente, placeat iste nulla voluptatem amet! Nisi necessitatibus harum natus aperiam perferendis incidunt cumque." /><br />
             <input   oninput="showInfo()"  type="text" id="s2" value="Lorem ipsum dolor sit amet consectetur adipisicing elit. A qui nobis doloremque debitis adipisci dolore voluptatem voluptate maiores eveniet totam ipsam in velit iste aperiam, temporibus omnis rerum delectus ab." /><br />
             <input   oninput="showInfo()"  type="text" id="s3" value="Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis tempore ducimus nemo! Nostrum ipsa aliquam qui nobis at voluptatibus aperiam placeat, nam repellat? Voluptas magni nisi, omnis nobis dicta temporibus." /><br />
           </div>
@@ -130,75 +130,76 @@
      
     </div>
 
-    <div id="toConvert">
-      <section>
-        <p id="dtwnReadPdf"></p>
-          <div class="flex center" id="titleDiv">
-            <img src="Icons/book.png" alt="" class="icon-50">
-            <h1 id="titlePdf"></h1>
-          </div>
-       
-        <h3 id="authorPdf"></h3>
-    
-        <div class="flex margin-top" id="ratingDiv"></div>
-       
-        <p id="genrePdf"></p>
-
-      </section>
-      <section id="desc">
-        <div class="flex">
-          <img src="Icons/paragraph.png" alt="" class="icon-25 margin-right">
-          <h2>The book in 3 Sentences</h2>
-     
-        </div>
-        
-        <p id="s1Pdf"></p>
-        <p id="s2Pdf"></p>
-        <p id="s3Pdf"></p>
-
-        <div class="flex">
-          <img src="Icons/impressions.png" alt="" class="icon-25 margin-right">
-          <h2>Impressions</h2>
-        </div>
-        <p id="impressionPdf"></p>
-
-        <div class="flex">
-          <img src="Icons/discover.png" alt="" class="icon-25 margin-right">
-          <h2>How I discovered</h2>
-        </div>
-        <p id="howIdiscPdf"></p>
-
-        <div class="flex">
-          <img src="Icons/reader.png" alt="" class="icon-25 margin-right">
-          <h2>Who should read?</h2>
-        </div>
-        <p id="howshouldrePdf"></p>
-      </section>
-      <section>
-
-        <div class="flex">
-          <img src="Icons/change.png" alt="" class="icon-25 margin-right">
-          <h2>How the book changed me</h2>
-        </div>
-        <p id="howchangedPdf"></p>
-      </section>
-      <section>
-        <div class="flex">
-          <img src="Icons/quotes.png" alt="" class="icon-25 margin-right">
-          <h2>My top 3 Quotes</h2>
-        </div>
- 
-        <p id="q1Pdf"></p>
-        <p id="q2Pdf"></p>
-        <p id="q3Pdf"></p>
-        <div class="flex">
-          <img src="Icons/notes.png" alt="" class="icon-25 margin-right">
-          <h2>Notes</h2>
-        </div>
-
+        <div id="toConvert">
+        <section>
+          <p id="dtwnReadPdf"></p>
+            <div class="flex center" id="titleDiv">
+              <img src="Icons/book.png" alt="" class="icon-50">
+              <h1 id="titlePdf"></h1>
+            </div>
+         
+          <h3 id="authorPdf"></h3>
       
-        <p id="notePdf"></p>
-      </section>
-    </div>
+          <div class="flex margin-top" id="ratingDiv"></div>
+         
+          <p id="genrePdf"></p>
+  
+        </section>
+        <section id="desc">
+          <div class="flex">
+            <img src="Icons/paragraph.png" alt="" class="icon-25 margin-right">
+            <h2>The book in 3 Sentences</h2>
+       
+          </div>
+          
+          <p id="s1Pdf"></p>
+          <p id="s2Pdf"></p>
+          <p id="s3Pdf"></p>
+  
+          <div class="flex">
+            <img src="Icons/impressions.png" alt="" class="icon-25 margin-right">
+            <h2>Impressions</h2>
+          </div>
+          <p id="impressionPdf"></p>
+  
+          <div class="flex">
+            <img src="Icons/discover.png" alt="" class="icon-25 margin-right">
+            <h2>How I discovered</h2>
+          </div>
+          <p id="howIdiscPdf"></p>
+  
+          <div class="flex">
+            <img src="Icons/reader.png" alt="" class="icon-25 margin-right">
+            <h2>Who should read?</h2>
+          </div>
+          <p id="howshouldrePdf"></p>
+        </section>
+        <section>
+  
+          <div class="flex">
+            <img src="Icons/change.png" alt="" class="icon-25 margin-right">
+            <h2>How the book changed me</h2>
+          </div>
+          <p id="howchangedPdf"></p>
+        </section>
+        <section>
+          <div class="flex">
+            <img src="Icons/quotes.png" alt="" class="icon-25 margin-right">
+            <h2>My top 3 Quotes</h2>
+          </div>
+   
+          <p id="q1Pdf"></p>
+          <p id="q2Pdf"></p>
+          <p id="q3Pdf"></p>
+          <div class="flex">
+            <img src="Icons/notes.png" alt="" class="icon-25 margin-right">
+            <h2>Notes</h2>
+          </div>
+  
+        
+          <p id="notePdf"></p>
+        </section>
+      </div>
+
   </body>
 </html>
