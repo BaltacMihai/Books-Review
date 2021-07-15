@@ -1,5 +1,3 @@
-
-
 let rating = 'one';
 
  function ratingClicked(number){
@@ -26,12 +24,6 @@ function showInfo() {
 
   const genre = document.getElementById("genre").value;
   document.getElementById("genrePdf").textContent = genre;
-
- 
-
-
- 
-
 
 
 if(repeat != 0 ) {

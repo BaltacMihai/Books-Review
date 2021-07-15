@@ -1,0 +1,26 @@
+/* <p class="Roboto">Roboto</p>
+<p class="OpenSans">Open Sans</p>
+<p class="Comofortaa">Comfortaa</p>
+<p class="Arial">Arial</p>
+<p class="TimesNewRoman">Times New Roman</p> */
+
+
+.Roboto{
+    font-family: Roboto, cursive;
+}
+
+.OpenSans{
+    font-family: 'Open Sans', cursive;
+}
+
+.Comofortaa{
+    font-family: 'Comfortaa', cursive;
+}
+
+.Arial{
+    font-family: Arial, cursive;
+}
+
+.TimesNewRoman{
+    font-family: 'Times New Roman', Times, serif,cursive;
+}

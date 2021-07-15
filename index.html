@@ -5,11 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
-    <script src="script.js"></script>
+    <script src="JavaScript/buildPage.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
+    <script src="JavaScript/settings.js"></script>
+    <link rel="stylesheet" href="CSS/fonts.css">
     <!-- https://ekoopmans.github.io/html2pdf.js/ -->
     
     <title>Book Reviewer</title>
@@ -25,10 +28,11 @@
     <div class="principal">
       <form>
         <section>
+          
           <h1>General</h1>
           <div class="input">
             <label for="title">Title:</label>
-            <input   oninput="showInfo()"  type="text" id="title" name="title" value="Some Title"/>
+            <input oninput="showInfo()"  type="text" id="title" name="title" value="Some Title"/>
           </div>
 
           <div class="input">
@@ -70,7 +74,7 @@
           <div class="input">
             <label for="impressions">Impressions</label>
 
-            <input
+            <input  oninput="showInfo()"
               type="text"
               id="impressions"
               value="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas aliquid, quis error reiciendis mollitia possimus vel eaque cum ullam asperiores blanditiis sapiente, cupiditate ipsam facere ex tempora. Ullam, dolorum molestias? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente consequatur, nam incidunt harum distinctio asperiores aut inventore molestiae quas laboriosam ipsa aliquam est facilis esse minima temporibus doloremque ab voluptatem!"
@@ -79,7 +83,7 @@
           <div class="input">
             <label for="HowIdisc">How I discovered it:</label>
 
-            <input
+            <input  oninput="showInfo()"
               type="text"
               id="howIdisc"
               value="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam pariatur, ea, sed repellendus amet consequatur optio ducimus est commodi voluptate dicta at obcaecati necessitatibus architecto libero inventore, atque velit culpa. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi minus eius quia dolor maiores aspernatur recusandae quas adipisci dolore, vel est in, quo non consectetur soluta, at minima molestiae quisquam!"
@@ -88,7 +92,7 @@
           <div class="input">
             <label for="howshouldre">Who should read it?</label>
 
-            <input
+            <input  oninput="showInfo()"
               type="text"
               id="howshouldre"
               value="Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque perferendis quibusdam repellat adipisci, animi voluptas pariatur, consequatur cumque, eaque ullam eveniet vel illum. Ea eligendi repudiandae distinctio qui voluptas accusantium! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab neque magnam repellat eligendi. Molestias iusto nostrum tenetur minima minus nam vel iure! Delectus quae provident eum tenetur soluta commodi repudiandae. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error optio placeat, rerum dolor velit officia nostrum eaque quos assumenda. Cumque numquam expedita aperiam veniam. Libero repellat aliquid ullam! Id, optio."
@@ -130,12 +134,12 @@
      
     </div>
 
-        <div id="toConvert">
+        <div id="toConvert" class="glass">
         <section>
           <p id="dtwnReadPdf"></p>
-            <div class="flex center" id="titleDiv">
+            <div class="flex center" id="titleDiv" >
               <img src="Icons/book.png" alt="" class="icon-50">
-              <h1 id="titlePdf"></h1>
+              <h1 id="titlePdf"  class="margin-left" ></h1>
             </div>
          
           <h3 id="authorPdf"></h3>
@@ -200,6 +204,23 @@
           <p id="notePdf"></p>
         </section>
       </div>
-
+      <img src="Icons/settings.png" class="icon-25" alt="Settings Icon" id="settings-button">
+      <div id="settings" class="glass">
+<div class="flex-row">
+  <h2> Font </h2>  
+  <div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">Font</button>
+    <div id="myDropdown" class="dropdown-content">
+     <p class="Roboto" onclick="changeFont('Roboto')">Roboto</p>
+     <p class="OpenSans">Open Sans</p>
+     <p class="Comofortaa">Comfortaa</p>
+     <p class="Arial">Arial</p>
+     <p class="TimesNewRoman">Times New Roman</p>
+    </div>
+  </div>
+  <h3 id="fontHolder">SomeText</h3>
+  
+</div>
+      </div>
   </body>
 </html>
